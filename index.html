@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AdScale — Performance Ads for Google, Facebook & Instagram</title>
+  <meta name="description" content="AdScale — Expert Google & Meta ads management. Scale profitable campaigns, reduce CPA, increase ROAS. Free strategy call." />
+  <meta name="theme-color" content="#0b1226">
+  <!-- Open Graph -->
+  <meta property="og:title" content="AdScale — Performance Ads for Google, Facebook & Instagram" />
+  <meta property="og:description" content="Expert Google & Meta ads management. Scale profitable campaigns, reduce CPA, increase ROAS. Free strategy call." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="hero-image.jpg" />
+  <meta property="og:url" content="" />
+  <!-- JSON-LD (Local Business / Freelancer) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"AdScale",
+    "description":"Performance marketing & paid ads management for Google, Facebook, Instagram and other platforms.",
+    "url":"",
+    "areaServed":"Worldwide",
+    "telephone":"",
+    "image":"hero-image.jpg"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#071029;
+      --card:#0f1a2b;
+      --muted:#9fb0c8;
+      --accent:#00c2a8;
+      --glass: rgba(255,255,255,0.03);
+      --radius:16px;
+      --max:1100px;
+      --gap:20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, var(--bg) 0%, #071826 100%);
+      color:#e6f0f6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    .container{max-width:var(--max);margin:0 auto;padding:36px 20px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0077ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021017;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a.cta{background:var(--accent);color:#021017;padding:10px 14px;border-radius:10px}
+    main.hero{margin-top:28px;display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero-left h1{font-size:clamp(26px,4vw,40px);margin:0 0 12px}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .buttons{display:flex;gap:12px}
+    .btn{padding:12px 16px;border-radius:12px;border:0;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#021017}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .hero-right{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:14px}
+    .kpi{display:flex;gap:12px;flex-wrap:wrap}
+    .kpi .card{background:var(--card);padding:14px;border-radius:12px;min-width:150px}
+    section{margin-top:36px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .service h4{margin:0 0 8px}
+    .case-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .case{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .testimonials{display:flex;flex-direction:column;gap:12px}
+    footer{margin-top:48px;padding:24px 0;color:var(--muted);font-size:13px;text-align:center}
+    /* responsive */
+    @media (max-width:980px){ main.hero{grid-template-columns:1fr; } .grid-3{grid-template-columns:repeat(2,1fr);} .case-cards{grid-template-columns:1fr} nav a{display:none} }
+    @media (max-width:520px){ .grid-3{grid-template-columns:1fr} .brand span{display:none} .logo{width:42px;height:42px} }
+    /* contact form */
+    .contact-panel{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .field{display:flex;flex-direction:column;margin-bottom:10px}
+    label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,select,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:inherit;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .muted{color:var(--muted);font-size:13px}
+    .price-grid{display:flex;gap:12px;flex-wrap:wrap}
+    .price{background:var(--glass);padding:14px;border-radius:12px;min-width:160px;border:1px solid rgba(255,255,255,0.03)}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AS</div>
+        <div>
+          <div style="font-weight:800">AdScale</div>
+          <div class="small">Performance Ads Manager</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#pricing">Pricing</a>
+        <a class="cta" href="#contact">Book Call</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-left">
+        <h1>Scale profitable paid-media: Google, Facebook, Instagram — with measurable ROAS</h1>
+        <p class="muted">I run and optimize ad funnels that reduce CPA, drive predictable leads & increase revenue. Ideal for SMBs, DTC and lead-gen businesses.</p>
+
+        <div class="buttons">
+          <button class="btn btn-primary" onclick="scrollToId('contact')">Book a free audit</button>
+          <button class="btn btn-ghost" onclick="scrollToId('cases')">See case studies</button>
+        </div>
+
+        <div style="margin-top:20px" class="muted">Trusted by small brands & agencies — replace these numbers with your real metrics</div>
+        <div class="kpi" style="margin-top:12px">
+          <div class="card"><div style="font-size:18px;font-weight:800">+120%</div><div class="small">Avg ROAS lift</div></div>
+          <div class="card"><div style="font-size:18px;font-weight:800">-35%</div><div class="small">Avg CPA reduction</div></div>
+          <div class="card"><div style="font-size:18px;font-weight:800">45+</div><div class="small">Campaigns managed</div></div>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-hidden="false">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="muted">Free 30-min audit</div>
+          <div style="font-weight:700">No obligation</div>
+        </div>
+
+        <div style="margin-top:12px" class="contact-panel">
+          <form id="leadForm" onsubmit="return handleSubmit(event)">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="platform">Priority platform</label>
+              <select id="platform" name="platform">
+                <option>Google Ads</option>
+                <option>Facebook / Instagram</option>
+                <option>Meta Audience Network</option>
+                <option>LinkedIn</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Quick note (budget, goals)</label>
+              <textarea id="message" name="message" placeholder="Monthly ad spend, target CPA, country..." ></textarea>
+            </div>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-primary" type="submit">Request audit</button>
+              <button type="button" class="btn btn-ghost" onclick="floQuick()">Quick call</button>
+            </div>
+            <div id="leadStatus" class="muted" style="margin-top:8px"></div>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <section id="services">
+      <h2>What I do</h2>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="service">
+          <h4>Google Ads — Search & Performance Max</h4>
+          <div class="small">Intent-driven campaigns that capture users ready to buy. Keyword strategy, SKAGs, PMax tuning, conversion tracking.</div>
+        </div>
+        <div class="service">
+          <h4>Meta (Facebook & Instagram)</h4>
+          <div class="small">Creative testing, CBO/advantage setups, ROAS optimization, event & pixel troubleshooting, scaling winners.</div>
+        </div>
+        <div class="service">
+          <h4>Shopping & DTC</h4>
+          <div class="small">Feed optimization, dynamic remarketing, catalog setups and lifecycle remarketing for increased LTV.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases">
+      <h2>Case studies & results</h2>
+      <div class="case-cards" style="margin-top:12px">
+        <article class="case">
+          <strong>eCommerce: DTC apparel</strong>
+          <div class="small">Goal: scale revenue</div>
+          <p style="margin:8px 0;font-weight:700;font-size:18px">3.2x ROAS — +78% revenue in 60 days</p>
+          <div class="small">Tactics: Google Shopping restructure, layered retargeting, cross-channel creative tests.</div>
+        </article>
+
+        <article class="case">
+          <strong>B2B lead-gen</strong>
+          <div class="small">Goal: reduce CPL</div>
+          <p style="margin:8px 0;font-weight:700;font-size:18px">-41% CPL — better quality leads</p>
+          <div class="small">Tactics: LinkedIn + Search synergy, gated content funnel, qualification on landing page.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing & packages</h2>
+      <div class="price-grid" style="margin-top:12px">
+        <div class="price">
+          <div style="font-weight:800">Starter</div>
+          <div class="small">For small budgets</div>
+          <div style="margin-top:8px;font-weight:700">₹15,000 / month</div>
+          <div class="small" style="margin-top:6px">Includes: account setup, 1 campaign, weekly optimizations</div>
+        </div>
+        <div class="price">
+          <div style="font-weight:800">Growth</div>
+          <div class="small">Scaling & testing</div>
+          <div style="margin-top:8px;font-weight:700">₹35,000 / month</div>
+          <div class="small" style="margin-top:6px">Includes: multi-channel, weekly reporting, creatives testing</div>
+        </div>
+        <div class="price">
+          <div style="font-weight:800">Pro</div>
+          <div class="small">Full-funnel partner</div>
+          <div style="margin-top:8px;font-weight:700">Custom</div>
+          <div class="small" style="margin-top:6px">Includes: strategy, CRO + analytics, dedicated hours, SLAs</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonials" style="margin-top:12px">
+        <div class="case">
+          <strong>Riya S. — Founder</strong>
+          <div class="small">"Reduced our CPA and gave us reliable ad operations — doubled monthly revenue in 3 months."</div>
+        </div>
+        <div class="case">
+          <strong>Ajay K. — Head of Growth</strong>
+          <div class="small">"Clear reporting and fast experimentation. Great partner for scale."</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact / Book a call</h2>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+        <div>
+          <p class="muted">Prefer a direct message? Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
+          <p class="muted">Or fill the quick form to request a free audit.</p>
+
+          <div style="margin-top:12px">
+            <h4 style="margin:0 0 8px">Quick tips to include in the message</h4>
+            <ul class="small" style="margin:0;padding-left:18px;color:var(--muted)">
+              <li>Monthly ad spend</li>
+              <li>Top performing channels</li>
+              <li>Primary goal (leads, sales, installs)</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="contact-panel">
+          <form id="leadFormBottom" onsubmit="return handleSubmit(event, true)">
+            <div class="field"><label for="bname">Business / Brand</label><input id="bname" name="bname" required></div>
+            <div class="field"><label for="bemail">Email</label><input id="bemail" type="email" name="bemail" required></div>
+            <div class="field"><label for="budget">Monthly ad budget (estimate)</label><input id="budget" name="budget"></div>
+            <div class="field"><label for="notes">Notes</label><textarea id="notes" name="notes"></textarea></div>
+            <div style="display:flex;gap:8px"><button class="btn btn-primary" type="submit">Send</button><button type="button" class="btn btn-ghost" onclick="scrollToId('services')">Explore services</button></div>
+            <div id="leadStatusBottom" class="muted" style="margin-top:8px"></div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> AdScale — Ads management & growth. <span class="small">Designed for performance.</span></div>
+    </footer>
+  </div>
+
+  <script>
+    // small helpers & form handler
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function scrollToId(id){
+      document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    function floQuick(){
+      // quick-call: open mailto or you can integrate Calendly / Google Meet link here
+      window.location.href = 'mailto:you@example.com?subject=Quick%20call%20request';
+    }
+
+    function handleSubmit(e, bottom){
+      e.preventDefault();
+      const form = e.target;
+      const statusId = bottom ? 'leadStatusBottom' : 'leadStatus';
+      const status = document.getElementById(statusId);
+      status.textContent = 'Sending...';
+
+      // Simple client-side validation already via required attributes.
+      // Replace this behavior with a real API endpoint, Formspree, or Zapier webhook.
+      const formData = new FormData(form);
+      // Minimal fallback: open user's email client prefilled (mailto). For production: POST to server.
+      const to = 'you@example.com';
+      const subject = encodeURIComponent('New lead from website: ' + (formData.get('name') || formData.get('bname') || ''));
+      const bodyParts = [];
+      for (const [k,v] of formData.entries()){
+        bodyParts.push(k + ': ' + v);
+      }
+      const body = encodeURIComponent(bodyParts.join('\\n'));
+      // open mailto in new tab/window
+      const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
+      window.open(mailto,'_blank');
+
+      status.textContent = 'Opened mail client — or replace with your API endpoint for automated leads.';
+      setTimeout(()=> status.textContent = '',4000);
+      return false;
+    }
+  </script>
+</body>
+</html>
